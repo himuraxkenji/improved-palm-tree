@@ -1,0 +1,27 @@
+{
+  "name": "redesigned-guide",
+  "version": "1.0.0",
+  "description": "react eshop",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himuraxkenji/redesigned-guide.git"
+  },
+  "keywords": [
+    "react",
+    "javascript"
+  ],
+  "author": "Himura Kenji",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/himuraxkenji/redesigned-guide/issues"
+  },
+  "homepage": "https://github.com/himuraxkenji/redesigned-guide#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
