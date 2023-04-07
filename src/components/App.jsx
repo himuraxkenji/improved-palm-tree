@@ -1,9 +1,15 @@
 import React from 'react'
-import '../styles/global.scss';
+import '../styles/global.css';
+import Layout from '../containers/Layout';
+import Login from '../containers/Login';
+import RecoveryPassword from '../containers/RecoveryPassword';
 
 const App = () => {
     return (
-        <h1>Hola Mundo asdasd</h1>
+        <Layout>
+            <Login/>
+            <RecoveryPassword/>
+        </Layout>
     );
 }
 
