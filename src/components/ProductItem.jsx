@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import '@styles/ProductItem.scss';
-import roundShelf from '@images/round-shelf.webp'
 import addToCart from '@icons/bt_add_to_cart.svg'
 
 
-const ProductItem = () => {
+const ProductItem = ({product}) => {
 
     const [cart, setCart] = useState('')
 
@@ -14,11 +13,11 @@ const ProductItem = () => {
 
     return (
         <div className="ProductItem">
-            <img src={roundShelf} alt=""/>
+            <img src={product.images[0]} alt={product.title}/>
                 <div className="product-info">
                     <div>
-                        <p>$ 120,00</p>
-                        <p>Round shelf</p>
+                        <p>$ {product.price}</p>
+                        <p>{product.title}</p>
                     </div>
                     <figure onClick={handleClick}>
                         <img src={addToCart} alt=""/>
