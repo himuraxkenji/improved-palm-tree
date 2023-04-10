@@ -18,8 +18,8 @@ module.exports = {
             '@containers': path.resolve(__dirname, 'src/containers'),
             '@pages': path.resolve(__dirname, 'src/pages'),
             '@styles': path.resolve(__dirname, 'src/styles'),
-            '@icons': path.resolve(__dirname, 'src/assets/icons'),
-            '@logos': path.resolve(__dirname, 'src/assets/logos'),
+            '@icons': path.resolve(__dirname, 'assets/icons/'),
+            '@logos': path.resolve(__dirname, 'assets/logos'),
         }
     },
     module: {
@@ -46,9 +46,9 @@ module.exports = {
                 ]
             }, 
             {
-                test: /\.(png|svg|jpg|gif)$/,
-                type: 'asset'
-            }
+				test: /\.(png|svg|jpg|gif)$/,
+				type: 'asset',
+			}
         ]
     },
     plugins: [
