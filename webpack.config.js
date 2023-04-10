@@ -18,8 +18,9 @@ module.exports = {
             '@containers': path.resolve(__dirname, 'src/containers'),
             '@pages': path.resolve(__dirname, 'src/pages'),
             '@styles': path.resolve(__dirname, 'src/styles'),
-            '@icons': path.resolve(__dirname, 'assets/icons/'),
+            '@icons': path.resolve(__dirname, 'assets/icons'),
             '@logos': path.resolve(__dirname, 'assets/logos'),
+            '@images': path.resolve(__dirname, 'assets/images')
         }
     },
     module: {
@@ -46,7 +47,7 @@ module.exports = {
                 ]
             }, 
             {
-				test: /\.(png|svg|jpg|gif)$/,
+				test: /\.(png|svg|jpg|gif|webp)$/,
 				type: 'asset',
 			}
         ]
