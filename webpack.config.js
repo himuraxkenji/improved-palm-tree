@@ -8,8 +8,8 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'bundle.js',
-        publicPath: '/',
+        filename: 'improved-palm-tree/bundle.js',
+        publicPath: '/improved-palm-tree/',
     },
     resolve: {
         extensions: ['.js', '.jsx'],

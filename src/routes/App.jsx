@@ -19,7 +19,7 @@ const App = () => {
 	const initialState = useInitialState()
 	return (
 		<AppContext.Provider value={initialState}>
-		<BrowserRouter>
+		<BrowserRouter basename="/improved-palm-tree">
 			<Layout>
 				<Switch>
 					<Route exact path="/" component={Home} />
