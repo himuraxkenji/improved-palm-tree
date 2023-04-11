@@ -1,15 +1,23 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import close from '@icons/icon_close.png'
 import '@styles/OrderItem.scss'
-import roundShelf from '@images/round-shelf.webp'
+import AppContext from '@context/AppContext'
 
-const OrderItem = () => {
+
+const OrderItem = ({product}) => {
+    const {removeFromCart} = useContext(AppContext)
+    const handleRemove = product => {
+        removeFromCart(product)
+    }
+
     return (
         <div className="OrderItem">
             <figure>
-                <img src={roundShelf} alt="" />
+                <img src={product.images[0]} alt={product.title} />
             </figure>
-            <p>Round shelf</p>
-            <p>$ 120,00</p>
+            <p>{product.title}</p>
+            <p>$ {product.price}</p>
+            <img src={close} alt="close" onClick={()=> handleRemove(product)}/>
         </div>
     );
 }
